@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="JXN-ru-Eby" customClass="ULoadingEditCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JXN-ru-Eby" id="rPs-gi-L1v">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxb-rN-IyM">
+                        <rect key="frame" x="36" y="37" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedsGraphics" translatesAutoresizingMaskIntoConstraints="NO" id="NCo-NW-BVH">
+                        <rect key="frame" x="264" y="36" width="20" height="20"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NCo-NW-BVH" secondAttribute="trailing" constant="36.04" id="4tE-Tt-8R8"/>
+                    <constraint firstItem="rxb-rN-IyM" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="35.96" id="opI-2K-Cl5"/>
+                    <constraint firstItem="NCo-NW-BVH" firstAttribute="centerY" secondItem="rPs-gi-L1v" secondAttribute="centerY" id="lQY-Ur-Csz"/>
+                    <constraint firstItem="rxb-rN-IyM" firstAttribute="centerY" secondItem="rPs-gi-L1v" secondAttribute="centerY" id="dxX-7P-mi0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fFm-cu-EOv"/>
+            <connections>
+                <outlet property="label" destination="rxb-rN-IyM" id="a6r-uh-EVF"/>
+                <outlet property="s_icon" destination="NCo-NW-BVH" id="pOr-JN-MeE"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="-29.14691943127962"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="speedsGraphics" width="20" height="20"/>
+    </resources>
+</document>

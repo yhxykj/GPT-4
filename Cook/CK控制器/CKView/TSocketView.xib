@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RFb-TB-Rj3" customClass="TSocketView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYA-1q-LZZ">
+                    <rect key="frame" x="0.0" y="538" width="390" height="306"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-cN-yVN">
+                            <rect key="frame" x="15" y="39" width="360" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="松开发送，上滑取消" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBJ-s4-eLL">
+                            <rect key="frame" x="130.66666666666666" y="144" width="128.99999999999997" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19.99" id="wuY-mh-959"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-WT-iC8">
+                            <rect key="frame" x="16" y="184" width="358" height="52"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editLaunchLogin" translatesAutoresizingMaskIntoConstraints="NO" id="yPA-b5-hg9">
+                                    <rect key="frame" x="0.0" y="0.0" width="358" height="52"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="yPA-b5-hg9" firstAttribute="top" secondItem="fyY-WT-iC8" secondAttribute="top" id="oxn-Jo-J9J"/>
+                                <constraint firstAttribute="bottom" secondItem="yPA-b5-hg9" secondAttribute="bottom" id="SoD-ti-OAu"/>
+                                <constraint firstAttribute="trailing" secondItem="yPA-b5-hg9" secondAttribute="trailing" id="KQU-Yj-GCy"/>
+                                <constraint firstItem="yPA-b5-hg9" firstAttribute="leading" secondItem="fyY-WT-iC8" secondAttribute="leading" id="nkC-vG-1vm"/>
+                                <constraint firstAttribute="height" constant="52.03" id="9er-xW-W4x"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="26"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请开始讲话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtJ-qW-Glw">
+                            <rect key="frame" x="149" y="39" width="92" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="PBJ-s4-eLL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CEM-cN-yVN" secondAttribute="bottom" constant="19.98" id="9Ob-gK-duF"/>
+                        <constraint firstAttribute="height" constant="305.97" id="MHB-ik-OrQ"/>
+                        <constraint firstItem="fyY-WT-iC8" firstAttribute="leading" secondItem="eYA-1q-LZZ" secondAttribute="leading" constant="16.01" id="9i0-rI-Q60"/>
+                        <constraint firstItem="PBJ-s4-eLL" firstAttribute="centerX" secondItem="CEM-cN-yVN" secondAttribute="centerX" id="hg4-Rv-FWx"/>
+                        <constraint firstItem="CEM-cN-yVN" firstAttribute="centerX" secondItem="eYA-1q-LZZ" secondAttribute="centerX" id="kk2-0D-cXq"/>
+                        <constraint firstItem="CEM-cN-yVN" firstAttribute="leading" secondItem="eYA-1q-LZZ" secondAttribute="leading" constant="14.99" id="GMQ-Np-XmG"/>
+                        <constraint firstAttribute="bottom" secondItem="fyY-WT-iC8" secondAttribute="bottom" constant="69.97" id="AIf-Kf-wPo"/>
+                        <constraint firstAttribute="trailing" secondItem="fyY-WT-iC8" secondAttribute="trailing" constant="16.05" id="4UY-Zm-LYO"/>
+                        <constraint firstItem="fyY-WT-iC8" firstAttribute="top" secondItem="PBJ-s4-eLL" secondAttribute="bottom" constant="20.02" id="vQl-eP-1ZL"/>
+                        <constraint firstItem="CEM-cN-yVN" firstAttribute="top" secondItem="eYA-1q-LZZ" secondAttribute="top" constant="39.01" id="zLg-dQ-UDd"/>
+                        <constraint firstAttribute="trailing" secondItem="CEM-cN-yVN" secondAttribute="trailing" constant="15.02" id="KL8-2Q-f7F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tG7-J6-DKT"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eYA-1q-LZZ" secondAttribute="bottom" id="9Oj-dQ-jJl"/>
+                <constraint firstItem="eYA-1q-LZZ" firstAttribute="leading" secondItem="tG7-J6-DKT" secondAttribute="leading" id="ylA-5V-mjR"/>
+                <constraint firstAttribute="trailing" secondItem="eYA-1q-LZZ" secondAttribute="trailing" id="Shl-Z8-BQP"/>
+            </constraints>
+            <connections>
+                <outlet property="contentlabel" destination="CEM-cN-yVN" id="CHi-Wy-HVe"/>
+                <outlet property="placelabel" destination="MtJ-qW-Glw" id="vlz-2V-nNm"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editLaunchLogin" width="358" height="52"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

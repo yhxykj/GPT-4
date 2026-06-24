@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="278" id="JXN-ru-Eby" customClass="UVZResponseCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JXN-ru-Eby" id="rPs-gi-L1v">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rve-xQ-GN0">
+                        <rect key="frame" x="13" y="16" width="258" height="262"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um2-2a-1Lj">
+                                <rect key="frame" x="20" y="20" width="225" height="222"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.93333333333333335" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Um2-2a-1Lj" secondAttribute="bottom" constant="20.02" id="7pU-LG-JQx"/>
+                            <constraint firstAttribute="trailing" secondItem="Um2-2a-1Lj" secondAttribute="trailing" constant="13.05" id="AKJ-Qs-n6s"/>
+                            <constraint firstItem="Um2-2a-1Lj" firstAttribute="leading" secondItem="rve-xQ-GN0" secondAttribute="leading" constant="20.04" id="zVd-xo-ZcZ"/>
+                            <constraint firstItem="Um2-2a-1Lj" firstAttribute="top" secondItem="rve-xQ-GN0" secondAttribute="top" constant="20.03" id="SXu-PT-o3v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khm-tT-jFs">
+                        <rect key="frame" x="271" y="20" width="49" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43.98" id="a5d-n0-esQ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="editAudioElevt"/>
+                        <connections>
+                            <action selector="collectionClick:" destination="JXN-ru-Eby" eventType="touchUpInside" id="q6E-V6-eZZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="khm-tT-jFs" secondAttribute="trailing" id="ros-WE-80C"/>
+                    <constraint firstAttribute="trailing" secondItem="rve-xQ-GN0" secondAttribute="trailing" constant="49.01" id="IGe-9E-9Qu"/>
+                    <constraint firstItem="rve-xQ-GN0" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="13.02" id="bqx-Nr-SUp"/>
+                    <constraint firstItem="rve-xQ-GN0" firstAttribute="top" secondItem="rPs-gi-L1v" secondAttribute="top" constant="16.02" id="gJk-dH-yc9"/>
+                    <constraint firstAttribute="bottom" secondItem="rve-xQ-GN0" secondAttribute="bottom" id="wHL-oN-Fsz"/>
+                    <constraint firstItem="khm-tT-jFs" firstAttribute="leading" secondItem="rve-xQ-GN0" secondAttribute="trailing" id="iqr-ib-udC"/>
+                    <constraint firstItem="khm-tT-jFs" firstAttribute="top" secondItem="rPs-gi-L1v" secondAttribute="top" constant="20.01" id="RKU-Ij-BnT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fFm-cu-EOv"/>
+            <connections>
+                <outlet property="label" destination="Um2-2a-1Lj" id="zUG-XT-u8c"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="45.774647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="editAudioElevt" width="22" height="21"/>
+    </resources>
+</document>

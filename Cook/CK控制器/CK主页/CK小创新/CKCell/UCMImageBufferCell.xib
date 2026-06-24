@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nr3-LB-yxD" customClass="UCMImageBufferCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fr-bz-9Ow">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilU-cB-E3z">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSx-a7-40J">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.99" id="LVT-r2-sQZ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="loginImageBottom"/>
+                                <connections>
+                                    <action selector="down:" destination="nr3-LB-yxD" eventType="touchUpInside" id="cwa-Mi-8nD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ilU-cB-E3z" firstAttribute="centerY" secondItem="5Fr-bz-9Ow" secondAttribute="centerY" id="a0y-m6-d5D"/>
+                            <constraint firstItem="LSx-a7-40J" firstAttribute="leading" secondItem="ilU-cB-E3z" secondAttribute="trailing" constant="14.97" id="IEm-ge-eGU"/>
+                            <constraint firstItem="LSx-a7-40J" firstAttribute="centerY" secondItem="5Fr-bz-9Ow" secondAttribute="centerY" id="hbG-3P-Jhq"/>
+                            <constraint firstAttribute="trailing" secondItem="LSx-a7-40J" secondAttribute="trailing" id="gdb-hk-UMc"/>
+                            <constraint firstAttribute="height" constant="60.01" id="fOA-0V-06q"/>
+                            <constraint firstItem="ilU-cB-E3z" firstAttribute="leading" secondItem="5Fr-bz-9Ow" secondAttribute="leading" constant="21.01" id="HjT-WT-3pW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="yeg-n2-mdS"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Fr-bz-9Ow" secondAttribute="trailing" constant="15.03" id="GXo-yU-app"/>
+                <constraint firstItem="5Fr-bz-9Ow" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" constant="15.05" id="Ov1-ZH-jzE"/>
+                <constraint firstItem="5Fr-bz-9Ow" firstAttribute="centerY" secondItem="nr3-LB-yxD" secondAttribute="centerY" id="BvX-Vq-n0D"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="ilU-cB-E3z" id="d2n-7T-9QU"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="loginImageBottom" width="15" height="8"/>
+    </resources>
+</document>

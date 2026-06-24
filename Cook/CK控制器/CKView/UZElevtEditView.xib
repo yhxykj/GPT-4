@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RFb-TB-Rj3" customClass="UZElevtEditView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inputElevtRing" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-Tb-dCR">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-ul-n8T">
+                    <rect key="frame" x="12" y="16" width="366" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AI对话" translatesAutoresizingMaskIntoConstraints="NO" id="Rit-bt-6m0">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="90"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Rit-bt-6m0" firstAttribute="top" secondItem="hCj-ul-n8T" secondAttribute="top" id="Kcn-Uy-71o"/>
+                        <constraint firstAttribute="height" constant="89.99" id="E7h-Hr-ZLC"/>
+                        <constraint firstItem="Rit-bt-6m0" firstAttribute="leading" secondItem="hCj-ul-n8T" secondAttribute="leading" id="HM2-lq-rJ2"/>
+                        <constraint firstAttribute="trailing" secondItem="Rit-bt-6m0" secondAttribute="trailing" id="IJR-3d-tdZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Rit-bt-6m0" secondAttribute="bottom" id="hiA-nT-Wnf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nSx-Tb-dCR" firstAttribute="top" secondItem="RFb-TB-Rj3" secondAttribute="top" id="uxO-oG-M15"/>
+                <constraint firstAttribute="trailing" secondItem="nSx-Tb-dCR" secondAttribute="trailing" id="yO3-Tv-rkr"/>
+                <constraint firstItem="hCj-ul-n8T" firstAttribute="top" secondItem="RFb-TB-Rj3" secondAttribute="top" constant="15.98" id="8U7-w7-Iph"/>
+                <constraint firstAttribute="trailing" secondItem="hCj-ul-n8T" secondAttribute="trailing" constant="11.98" id="Pmy-Lz-jzL"/>
+                <constraint firstItem="nSx-Tb-dCR" firstAttribute="leading" secondItem="RFb-TB-Rj3" secondAttribute="leading" id="Vtn-bu-lZH"/>
+                <constraint firstItem="hCj-ul-n8T" firstAttribute="leading" secondItem="RFb-TB-Rj3" secondAttribute="leading" constant="12.01" id="Qr1-bP-IeQ"/>
+                <constraint firstAttribute="bottom" secondItem="nSx-Tb-dCR" secondAttribute="bottom" id="PlR-o2-tms"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.76923076923077" y="237.44075829383885"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AI对话" width="362" height="90"/>
+        <image name="inputElevtRing" width="390" height="211"/>
+    </resources>
+</document>

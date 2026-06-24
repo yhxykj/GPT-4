@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner" customClass="HYHistoryController" customModule="Cook" customModuleProvider="target">
+            <connections>
+                <outlet property="notView" destination="COJ-A3-sCO" id="j2L-ca-k7U"/>
+                <outlet property="tableView" destination="bHt-aG-RXf" id="VMl-wC-F3u"/>
+                <outlet property="view" destination="tKq-Ue-rc2" id="zrA-RK-STu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="tKq-Ue-rc2">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-aG-RXf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="7k8-87-FOx" id="VRA-k8-9o7"/>
+                        <outlet property="delegate" destination="7k8-87-FOx" id="dRm-Hm-lvC"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COJ-A3-sCO">
+                    <rect key="frame" x="87.666666666666671" y="268.33333333333331" width="217.66666666666663" height="235.33333333333331"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneDetailsPrefix_k" translatesAutoresizingMaskIntoConstraints="NO" id="Aex-ok-eZ4">
+                            <rect key="frame" x="0.0" y="0.0" width="217.66666666666666" height="218"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无记录～" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJv-U3-KH8">
+                            <rect key="frame" x="65.666666666666657" y="214.33333333333337" width="86.666666666666657" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="217.96000000000001" id="F35-uk-2mS"/>
+                        <constraint firstItem="VJv-U3-KH8" firstAttribute="centerX" secondItem="COJ-A3-sCO" secondAttribute="centerX" id="MqE-uZ-A2h"/>
+                        <constraint firstAttribute="trailing" secondItem="Aex-ok-eZ4" secondAttribute="trailing" id="Zrx-rN-qZV"/>
+                        <constraint firstItem="Aex-ok-eZ4" firstAttribute="top" secondItem="COJ-A3-sCO" secondAttribute="top" id="cwV-Jm-hiw"/>
+                        <constraint firstAttribute="bottom" secondItem="VJv-U3-KH8" secondAttribute="bottom" id="d0R-kM-6ML"/>
+                        <constraint firstItem="Aex-ok-eZ4" firstAttribute="leading" secondItem="COJ-A3-sCO" secondAttribute="leading" id="hqw-Vs-sA9"/>
+                        <constraint firstAttribute="height" constant="235.02000000000001" id="sI6-s0-vxN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="zNb-eM-I5S"/>
+            <constraints>
+                <constraint firstItem="COJ-A3-sCO" firstAttribute="centerY" secondItem="tKq-Ue-rc2" secondAttribute="centerY" constant="-40" id="3h2-Fd-sS3"/>
+                <constraint firstAttribute="bottom" secondItem="bHt-aG-RXf" secondAttribute="bottom" id="ke8-Nb-cDA"/>
+                <constraint firstAttribute="trailing" secondItem="bHt-aG-RXf" secondAttribute="trailing" id="oBm-7m-RhN"/>
+                <constraint firstItem="bHt-aG-RXf" firstAttribute="leading" secondItem="tKq-Ue-rc2" secondAttribute="leading" id="xFO-rs-Y6B"/>
+                <constraint firstItem="COJ-A3-sCO" firstAttribute="centerX" secondItem="tKq-Ue-rc2" secondAttribute="centerX" id="xOm-ug-w0A"/>
+                <constraint firstItem="bHt-aG-RXf" firstAttribute="top" secondItem="tKq-Ue-rc2" secondAttribute="top" id="zGn-uM-7pV"/>
+            </constraints>
+            <point key="canvasLocation" x="81.679389312977094" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="phoneDetailsPrefix_k" width="218" height="218"/>
+    </resources>
+</document>
