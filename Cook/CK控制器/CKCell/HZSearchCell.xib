@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nr3-LB-yxD" customClass="HZSearchCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8CM-KO-rSw">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chuangPhone" translatesAutoresizingMaskIntoConstraints="NO" id="by2-XJ-HZq">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="yeg-n2-mdS"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="by2-XJ-HZq" secondAttribute="bottom" id="ytJ-jB-VQJ"/>
+                <constraint firstAttribute="bottom" secondItem="8CM-KO-rSw" secondAttribute="bottom" id="DY9-uM-WO7"/>
+                <constraint firstItem="by2-XJ-HZq" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="Uxl-xv-EdQ"/>
+                <constraint firstItem="8CM-KO-rSw" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="OUU-LA-IQC"/>
+                <constraint firstAttribute="trailing" secondItem="8CM-KO-rSw" secondAttribute="trailing" id="3QL-2r-7dd"/>
+                <constraint firstItem="8CM-KO-rSw" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="NDc-7c-Htl"/>
+                <constraint firstAttribute="trailing" secondItem="by2-XJ-HZq" secondAttribute="trailing" id="g4C-Zw-FKu"/>
+                <constraint firstItem="by2-XJ-HZq" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="RLi-E6-xn5"/>
+            </constraints>
+            <size key="customSize" width="113" height="103"/>
+            <connections>
+                <outlet property="Icon" destination="8CM-KO-rSw" id="Phx-aP-VGK"/>
+                <outlet property="select_icon" destination="by2-XJ-HZq" id="eO4-ni-V4R"/>
+            </connections>
+            <point key="canvasLocation" x="179.23076923076923" y="6.7535545023696679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chuangPhone" width="54" height="54"/>
+    </resources>
+</document>

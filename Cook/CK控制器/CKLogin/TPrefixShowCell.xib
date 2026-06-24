@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nr3-LB-yxD" customClass="TPrefixShowCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closeShouGundong" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-0p-eyR">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4of-Kr-vFB">
+                        <rect key="frame" x="150" y="608" width="88" height="44"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.66274509800000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88.04" id="1z9-cY-9RC"/>
+                            <constraint firstAttribute="height" constant="43.99" id="xMC-WQ-2FM"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="下一步"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="yeg-n2-mdS"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4of-Kr-vFB" secondAttribute="bottom" constant="60.03" id="6EB-0T-cXv"/>
+                <constraint firstItem="Wry-0p-eyR" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="DgT-o5-wLo"/>
+                <constraint firstItem="4of-Kr-vFB" firstAttribute="centerX" secondItem="nr3-LB-yxD" secondAttribute="centerX" id="S50-fe-FZv"/>
+                <constraint firstAttribute="trailing" secondItem="Wry-0p-eyR" secondAttribute="trailing" id="PPn-Pb-xrK"/>
+                <constraint firstItem="Wry-0p-eyR" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="FIg-Wj-W5Q"/>
+                <constraint firstAttribute="bottom" secondItem="Wry-0p-eyR" secondAttribute="bottom" id="AMN-RQ-HdJ"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="Wry-0p-eyR" id="VtP-Fp-haK"/>
+                <outlet property="button" destination="4of-Kr-vFB" id="pJQ-mj-DDS"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="closeShouGundong" width="390" height="844"/>
+    </resources>
+</document>

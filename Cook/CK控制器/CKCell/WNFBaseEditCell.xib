@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nr3-LB-yxD" customClass="WNFBaseEditCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playChuang" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-vr-A0J">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-oJ-AaU">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="63"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="yeg-n2-mdS"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tdt-vr-A0J" secondAttribute="trailing" id="96x-so-WeN"/>
+                <constraint firstItem="fJ1-oJ-AaU" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="3aL-OF-eQx"/>
+                <constraint firstItem="fJ1-oJ-AaU" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="iJj-1N-vlu"/>
+                <constraint firstAttribute="trailing" secondItem="fJ1-oJ-AaU" secondAttribute="trailing" id="a1i-d0-p3T"/>
+                <constraint firstAttribute="bottom" secondItem="fJ1-oJ-AaU" secondAttribute="bottom" constant="5.05" id="zYy-rq-rm7"/>
+                <constraint firstItem="Tdt-vr-A0J" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="7t0-3s-259"/>
+                <constraint firstAttribute="bottom" secondItem="Tdt-vr-A0J" secondAttribute="bottom" id="JLq-tA-Yy5"/>
+                <constraint firstItem="Tdt-vr-A0J" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="3MN-BF-B4e"/>
+            </constraints>
+            <size key="customSize" width="142" height="68"/>
+            <connections>
+                <outlet property="backImage" destination="Tdt-vr-A0J" id="ziG-Oq-xMg"/>
+                <outlet property="titlelabel" destination="fJ1-oJ-AaU" id="GpG-HA-Yq0"/>
+            </connections>
+            <point key="canvasLocation" x="201.53846153846152" y="-5.6872037914691944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="playChuang" width="91" height="37"/>
+    </resources>
+</document>

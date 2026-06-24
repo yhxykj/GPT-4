@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="JXN-ru-Eby" customClass="BJGundongItemCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="JXN-ru-Eby" id="rPs-gi-L1v">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuPrefix_bBase" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-gK-yqy">
+                        <rect key="frame" x="15" y="15" width="345" height="335"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="335.01" id="bdF-wm-z9v"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQs-bK-Hnc">
+                        <rect key="frame" x="15" y="139" width="345" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52.02" id="gYh-sZ-pq1"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="JXN-ru-Eby" eventType="touchUpInside" id="r5j-Fu-yD5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US6-uF-XLg">
+                        <rect key="frame" x="15" y="72" width="345" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51.96" id="Wsu-d2-ucV"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="JXN-ru-Eby" eventType="touchUpInside" id="387-PO-2Xn"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-PA-HIs">
+                        <rect key="frame" x="15" y="211" width="345" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51.98" id="utA-ia-Tam"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="JXN-ru-Eby" eventType="touchUpInside" id="G2Z-tT-Sn1"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgn-p6-Qzn">
+                        <rect key="frame" x="280" y="23" width="75" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74.99" id="SlU-3e-LUa"/>
+                            <constraint firstAttribute="height" constant="35.02" id="uer-ap-Pfs"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="updateClick:" destination="JXN-ru-Eby" eventType="touchUpInside" id="3BR-iz-afm"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yab-v7-tOE">
+                        <rect key="frame" x="15" y="283" width="345" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52.01" id="2oP-nl-WlF"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="JXN-ru-Eby" eventType="touchUpInside" id="YZ8-yX-yh3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="US6-uF-XLg" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="14.99" id="392-CB-n4A"/>
+                    <constraint firstAttribute="trailing" secondItem="Mgn-p6-Qzn" secondAttribute="trailing" constant="20.02" id="w17-vW-M5w"/>
+                    <constraint firstAttribute="trailing" secondItem="bM4-PA-HIs" secondAttribute="trailing" constant="14.98" id="12W-sz-iHd"/>
+                    <constraint firstItem="bM4-PA-HIs" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="15.03" id="ctG-Vg-kVQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Yab-v7-tOE" secondAttribute="trailing" constant="15.01" id="IdG-WM-SEW"/>
+                    <constraint firstItem="US6-uF-XLg" firstAttribute="top" secondItem="rPs-gi-L1v" secondAttribute="top" constant="72.03" id="hu4-me-Sh7"/>
+                    <constraint firstAttribute="trailing" secondItem="dfm-gK-yqy" secondAttribute="trailing" constant="14.96" id="Kcx-xD-2uE"/>
+                    <constraint firstItem="dfm-gK-yqy" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="14.99" id="BLL-uM-mom"/>
+                    <constraint firstItem="dfm-gK-yqy" firstAttribute="top" secondItem="rPs-gi-L1v" secondAttribute="top" constant="14.98" id="bWt-tH-xsM"/>
+                    <constraint firstItem="AQs-bK-Hnc" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="15.02" id="dVj-ib-9dr"/>
+                    <constraint firstAttribute="trailing" secondItem="AQs-bK-Hnc" secondAttribute="trailing" constant="14.96" id="fe1-Tf-B8s"/>
+                    <constraint firstItem="Yab-v7-tOE" firstAttribute="top" secondItem="bM4-PA-HIs" secondAttribute="bottom" constant="20.01" id="j1O-x4-9hb"/>
+                    <constraint firstItem="Mgn-p6-Qzn" firstAttribute="top" secondItem="rPs-gi-L1v" secondAttribute="top" constant="23.01" id="ce6-BO-wSX"/>
+                    <constraint firstItem="bM4-PA-HIs" firstAttribute="top" secondItem="AQs-bK-Hnc" secondAttribute="bottom" constant="20.01" id="d1F-kK-oB7"/>
+                    <constraint firstItem="Yab-v7-tOE" firstAttribute="leading" secondItem="rPs-gi-L1v" secondAttribute="leading" constant="15.02" id="06s-9n-Rbx"/>
+                    <constraint firstAttribute="bottom" secondItem="dfm-gK-yqy" secondAttribute="bottom" constant="14.95" id="2pm-34-j71"/>
+                    <constraint firstItem="AQs-bK-Hnc" firstAttribute="top" secondItem="US6-uF-XLg" secondAttribute="bottom" constant="14.99" id="TIo-Y6-Q9z"/>
+                    <constraint firstAttribute="trailing" secondItem="US6-uF-XLg" secondAttribute="trailing" constant="14.98" id="j8f-vg-b4r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fFm-cu-EOv"/>
+            <connections>
+                <outlet property="IconImage" destination="dfm-gK-yqy" id="2Pw-ae-x5t"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menuPrefix_bBase" width="358" height="335"/>
+    </resources>
+</document>

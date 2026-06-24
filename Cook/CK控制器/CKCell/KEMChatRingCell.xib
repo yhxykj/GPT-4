@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="7k8-87-FOx" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="hLn-To-IgM" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nr3-LB-yxD" customClass="KEMChatRingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speak0" translatesAutoresizingMaskIntoConstraints="NO" id="jPz-Ce-QYq">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="yeg-n2-mdS"/>
+            <constraints>
+                <constraint firstItem="jPz-Ce-QYq" firstAttribute="leading" secondItem="nr3-LB-yxD" secondAttribute="leading" id="Yov-Mw-lFs"/>
+                <constraint firstAttribute="bottom" secondItem="jPz-Ce-QYq" secondAttribute="bottom" id="nep-oK-cm9"/>
+                <constraint firstAttribute="trailing" secondItem="jPz-Ce-QYq" secondAttribute="trailing" id="6eO-iJ-AmD"/>
+                <constraint firstItem="jPz-Ce-QYq" firstAttribute="top" secondItem="nr3-LB-yxD" secondAttribute="top" id="zxR-j2-g73"/>
+            </constraints>
+            <size key="customSize" width="150" height="163"/>
+            <connections>
+                <outlet property="sepakImage" destination="jPz-Ce-QYq" id="1kG-R8-A1P"/>
+            </connections>
+            <point key="canvasLocation" x="207.69230769230768" y="28.080568720379144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="speak0" width="94" height="95"/>
+    </resources>
+</document>
