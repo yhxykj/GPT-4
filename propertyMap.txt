@@ -1,0 +1,8 @@
+{
+  "recognitionTask" : "objSocket",
+  "generator" : "stringSlider",
+  "recognitionRequest" : "taskExpiration",
+  "speechRecognizer" : "countAyment",
+  "voiceCancel" : "sharedCheck",
+  "silenceThreshold" : "executeModel"
+}
